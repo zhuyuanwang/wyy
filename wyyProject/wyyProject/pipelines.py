@@ -27,7 +27,7 @@ class MysqlPipeline(object):
 
     def open_spider(self, spider):
         # 连接数据库
-        self.conn = pymysql.Connect(host='192.168.99.1',port=3306,user='root',password='123456',db='spiders',charset='utf8')
+        self.conn = pymysql.Connect(host='192.168.99.1',port=3306,user='root',password='******',db='spiders',charset='utf8')
         # 获取游标
         self.cursor = self.conn.cursor()
         # 捕获异常并写入文本
